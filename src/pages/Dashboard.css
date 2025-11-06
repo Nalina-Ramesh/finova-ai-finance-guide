@@ -1,0 +1,142 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, rgba(var(--primary), 0.1), var(--background), rgba(var(--secondary), 0.1));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+  text-align: center;
+}
+
+.dashboard-container p {
+  font-size: 1rem;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.financial-overview {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.overview-item {
+  width: calc(33% - 1rem);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  background-color: var(--card);
+  text-align: left;
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.overview-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.overview-item p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.savings-goals {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  background-color: var(--card);
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  width: 100%;
+  max-width: 900px;
+}
+
+.savings-goals h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
+.savings-goals div {
+  display: flex;
+  flex-direction: column;
+}
+
+.savings-goals input {
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid var(--input);
+  border-radius: 0.375rem;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+.savings-goals button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.financial-assistant {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  width: 100%;
+  max-width: 900px;
+}
+
+.financial-assistant h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
+.financial-assistant input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--input);
+  border-radius: 0.375rem;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+.financial-assistant button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .financial-overview {
+    flex-direction: column;
+  }
+
+  .overview-item {
+    width: 100%;
+  }
+}
